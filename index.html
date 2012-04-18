@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html>  
+  <head>  
+    <title>CouchEver</title>  
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="/_utils/script/json2.js"></script>  
+    <script src="/_utils/script/jquery.js"></script>  
+    <script src="/_utils/script/jquery.couch.js"></script>  
+    <script src="mustache.js"></script>  
+    <script src="form.js"></script>  
+    <script src="template.js"></script>  
+    <script src="couchever.js"></script>  
+    <script type="text/javascript">  
+          $(document).ready(function() {
+           init();
+          });  
+    </script>  
+  </head>  
+  <body>
+    <div id="wrapper">
+       <div id="hd">
+         <div id="hdTitle">CouchEver</div>
+         <div id="hdMenu">
+           <a href="#" id="BtDelNote">Del</a>
+           <a href="#" id="BtEditNote">Edit</a>
+           <a href="#" id="BtAddNote">New</a>
+         </div>  
+       </div>
+       <div id="sb">
+         <div id="sbSearchHead">Search</div>
+         <div id="sbSearch"></div>
+         <div id="sbTagsHead">Tags</div>
+         <div id="sbTags"><ul id="TagList"/></div>
+		 <div id="sbListHead">Notes</br>
+         <div id="sbList"><ul id="NoteList"/></div>
+       </div>
+       <div id="ct">
+         <div id="splash">
+           <h2>Welcome to CouchEver</h2> 
+           <p>a Couchdb application who's emulating the concept of the very Nice Evernote</p>
+         </div>
+       </div>  
+       <div id="ft">
+       <span id="msg"></span>
+       </div>
+    </div>  
+  </body>  
+</html>  
